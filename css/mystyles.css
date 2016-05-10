@@ -1,0 +1,348 @@
+/*Fonts*/
+/*Set default font family and colour for entire website*/
+body{
+    font-family: Candara, Verdana, Arial, serif;
+    color: #6D7993;
+    font-size: 1em;
+}
+
+/*Font sizes and styles*/
+/*Heading styles*/
+h1{
+    font-size: 3em;
+    font-family: "Brush Script MT", cursive;
+}
+
+h2{
+    font-size: 2.5em;
+    font-family: "Brush Script MT", cursive;
+}
+
+h3{
+    font-size: 2em;
+    font-family: "Brush Script MT", cursive;
+}
+
+h4{
+    font-size: 1.2em;
+    margin-bottom: 1%;  /*Add space below header*/
+}
+
+a{
+    text-decoration: none;
+    line-height: 125%;
+}
+
+/*Link styles*/
+a:link{
+    color: #3382b7;
+}
+
+a:visited{
+    color: #04a398;
+}
+
+a:hover{
+    color: #b1dfd5;
+}
+
+#titleText a{
+    color: #6D7993;
+}
+
+/*List styles for content pages*/
+li{
+    line-height: 150%;
+}
+
+.content li{
+    margin: 1%;
+    list-style-type: none;
+}
+
+li ul{
+    margin-left: 5%;
+}
+
+.content li ul li{
+    list-style-type: circle;
+}
+
+p{
+    font-size: 1em;
+    margin-bottom: 2%;
+    text-align: justify;
+    line-height: 150%;
+}
+
+/*Wrapper styles*/
+#wrapper{
+    background-image: url("../images/lace.jpg");
+    background-size: contain;
+}
+
+/*Headers and footers*/
+header{
+    background-color: #ddf1e8;
+    text-align: center;
+}
+
+#websiteHeader{
+    padding: 1%;
+}
+
+#leftHeader{
+    float: right;
+}
+
+#rightHeader{
+    float: left;
+}
+
+/*Menu styles*/
+/*Main menu styles*/
+#mainmenu{
+    background-color: white;
+    padding: 1%;
+    margin: 2%;
+}
+
+#menubar li{
+    display: inline;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*Content page side bar styles*/
+#sidebar{
+    background-color: white;
+    padding: 2% 0 5% 0;
+    margin-left: 3%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+/*Table styles for side menu*/
+#sidemenu{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sidemenu td{
+    text-align: center;
+    padding: 5%;
+}
+
+/*Homepage styles*/
+#coupletext{
+    text-align: center;
+}
+
+/*Content pages*/
+/*Page headings*/
+#pageheader{
+    text-align: center;
+}
+
+/*Content boxes*/
+.content{
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 2%;  /*Add padding to top, left and bottom of content divs*/
+    border-radius: 5%;
+}
+
+/*RSVP form*/
+
+#NameEmail td{
+    padding: 2%;
+}
+
+input[type=text]{
+    width: 95%;
+}
+
+#Attendance{
+    width: 100%;
+}
+
+#Attendance td, #SpecialRequirements td{
+    padding: 1%;
+}
+
+#SpecialRequirements{
+    width: 100%;
+}
+
+#SpecialRequirements textarea{
+    width: 95%;
+}
+
+/*Images and iframes*/
+/*All pages*/
+#FooterScroll{
+    width: 100%;
+}
+
+
+.pic{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/*homepage*/
+#katedave{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/*Wedding details*/
+
+/*Contact details*/
+#groompic{
+    max-width: 100%;
+    margin-left: 40%;
+}
+
+/*Travel*/
+#largeMap{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 400px;
+}
+
+.map{
+    width: 100%;
+    height: 200px;
+}
+
+/*Display settings to hide mobile-only content*/
+.mobileMenu{
+    display: none;
+}
+
+/*Media queries*/
+
+/* Tablet devices */
+@media only screen and (max-width: 767px) {
+    #menubar li{
+        font-size: 1em; /*Reduce the font size for smaller screen*/
+        word-wrap: break-word;  /*Allow word breaking in menu bar as "Accommodation" will overlap*/
+    }
+    /*Don't display sidebar menu*/
+    #sidebar{
+        display:none;
+    }
+
+    #maintext{
+        width: 97%; /*Increase size of main text div to fill page*/
+    }
+    #coupletext {
+        font-size: 2em;   /*Shrink font size*/
+    }
+
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 480px) {
+    /*Don't display images and maps*/
+    .pic, .HeaderPic, #groompic, .map{
+        display: none;
+    }
+
+    /*Page menu styling*/
+    /*Don't display sidebar menu*/
+    #sidebar{
+        display: none;
+    }
+
+    /*Replace main menu bar with drop down menu*/
+    #mainmenu{
+        display: none;
+    }
+
+    /*Font size adjustment*/
+    #menubar li{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h4{
+        font-size: 1em;
+    }
+    #coupletext {
+        font-size: 1.5em;   /*Shrink font size*/
+    }
+
+    /*Map size adjustment*/
+    #largeMap{
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+
+
+    /*Code for dropdown button taken from http://www.w3schools.com/howto/howto_js_dropdown.asp*/
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: gray;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: darkgray;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .mobileMenu {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+
+    }
+

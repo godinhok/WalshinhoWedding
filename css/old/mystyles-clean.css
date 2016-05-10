@@ -1,0 +1,148 @@
+/*Fonts*/
+/*Font-families*/
+h1, h2, h3{
+    font-family: "Brush Script MT";
+}
+
+/*Font sizes and styles*/
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.2em;
+    margin-bottom: 1%;  /*Add space below header*/
+}
+
+/*Wrapper styles*/
+#wrapper{
+    background-image: url("../images/lace.jpg");
+}
+
+/*Headers and footers*/
+header{
+    background-color: #ddf1e8;
+    text-align: center;
+}
+
+#websiteHeader{
+    padding: 1%;
+}
+
+#leftHeader{}
+
+#rightHeader{}
+
+/*Menu styles*/
+/*Main menu styles*/
+#mainmenu{
+    background-color: white;
+    padding: 1%;
+    margin: 2%;
+}
+
+#menubar li{
+    display: inline;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*Content page side bar styles*/
+#sidebar{
+    background-color: white;
+    padding: 2% 0 5% 0;
+    margin-left: 3%;
+    text-align: center;
+}
+
+/*Table styles for side menu*/
+#sidemenu{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sidemenu td{
+    text-align: center;
+    padding: 5%;
+}
+
+/*Homepage styles*/
+#coupletext{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/*Content pages*/
+/*Page headings*/
+#pageheader{
+    text-align: center;
+}
+
+/*Content boxes*/
+.content{
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 2% 0 2% 2%;  /*Add padding to top, left and bottom of content divs*/
+}
+
+/*RSVP form*/
+#NameEmail td{
+    padding: 2%;
+}
+
+#Attendance td, #SpecialRequirements td{
+    padding: 1%;
+}
+
+/*Images and iframes*/
+/*All pages*/
+#FooterScroll{
+    width: 100%;
+}
+
+#leftHeader, #rightHeader{
+    width: 30%;
+    vertical-align: middle;
+}
+
+.pic{
+    width: 100%;
+}
+
+/*homepage*/
+#katedave{
+    width: 100%;
+}
+
+/*Wedding details*/
+#churchpic{
+    width: 100%;
+}
+
+#hotelpic{
+    width: 100%;
+}
+
+#partypic{
+    width: 100%;
+}
+
+/*Contact details*/
+#groompic{
+    height: 50%;
+}
+
+/*Travel*/
+#largeMap{
+    width: 80%;
+    height: 400px;
+}

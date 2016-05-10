@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Walshinho Wedding</title>
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/8cols.css" media="all">
+	<link href="css/mystyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper" class="container"> <!--Wrapper for entire page-->
+		
+		<header class="section group">
+			<div class="HeaderPic col span_1_of_5">
+                <a href="index.html"><img id="leftHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+            <div id="titleText" class= "col span_3_of_5">
+                <a href="index.html"><h1>Walshinho Wedding</h1></a>
+            </div>
+            <div class="HeaderPic col span_1_of_5">
+               <a href="index.html"><img id="rightHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+		</header>
+
+		<nav id="mainmenu" class="section group"> <!--Main menu bar-->
+			<ul id="menubar">
+				<li class="col span_1_of_6"><a href="index.html">Home</a></li>
+				<li class="col span_1_of_6"><a href="weddingdetails.html">Wedding Details</a></li>
+				<li class="col span_1_of_6"><a href="accommodation.html">Accommodation</a></li>
+				<li class="col span_1_of_6"><a href="travel.html">Travel</a></li>
+				<li class="col span_1_of_6"><a href="contactus.html">Contact us</a></li>
+				<li class="col span_1_of_6"><a href="rsvp.html">RSVP</a></li>
+			</ul> <!--Main menu bar-->
+		</nav>
+
+        <!--Dropdown menu for mobile site-->
+        <div class="mobileMenu">
+            <button onclick="showMenu()" class="dropbtn">Menu</button>	<!--Button to click on for menu-->
+            <div id="dropdown" class="dropdown-content"> <!--Container for dropdown links-->
+                <a href="index.html">Home</a>
+				<a href="weddingdetails.html">Wedding Details</a>
+				<a href="accommodation.html">Accommodation</a>
+				<a href="travel.html">Travel</a>
+				<a href="contactus.html">Contact us</a>
+				<a href="rsvp.html">RSVP</a>
+            </div>	<!--Container for dropdown links-->
+        </div>
+
+
+		<div id="maincontent" class="section group"> <!--Main content div-->
+
+			<div class="col span_1_of_8"></div> <!--Empty div used to create space around picture-->
+
+			<div id="mainimage" class= "col span_6_of_8">
+                <img id="katedave" src="images/LondonEye.jpg" alt="Wedding couple">	<!--Image of wedding couple-->
+                <h2 id="coupletext">Kate Godinho & David Walsh<br>27th May 2016</h2>
+            </div>
+
+		</div> <!--Main content div-->
+
+		<footer>
+			<img id="FooterScroll" src="images/footer-scroll.png" alt="scroll footer">
+		</footer>
+
+	</div> <!--Wrapper for entire page-->
+
+
+    <!--Script for dropdown menu for mobile site-->
+    <script src="scripts/dropdown.js"></script>
+
+
+</body>
+
+</html>

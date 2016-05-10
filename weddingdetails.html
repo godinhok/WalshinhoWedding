@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Walshinho Wedding Details</title>
+    <link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/12cols.css" media="all">
+	<link href="css/mystyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper"> <!--Wrapper for entire page-->
+
+		<header class="section group">
+			<div class="HeaderPic col span_1_of_5">
+                <a href="index.html"><img id="leftHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+            <div id="titleText" class= "col span_3_of_5">
+                <a href="index.html"><h1>Walshinho Wedding</h1></a>
+            </div>
+            <div class="HeaderPic col span_1_of_5">
+               <a href="index.html"><img id="rightHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+		</header>
+
+
+
+		<nav id="mainmenu" class="section group"> <!--Main menu bar-->
+			<ul id="menubar">
+				<li class="col span_1_of_6"><a href="index.html">Home</a></li>
+				<li class="col span_1_of_6"><a href="weddingdetails.html">Wedding Details</a></li>
+				<li class="col span_1_of_6"><a href="accommodation.html">Accommodation</a></li>
+				<li class="col span_1_of_6"><a href="travel.html">Travel</a></li>
+				<li class="col span_1_of_6"><a href="contactus.html">Contact us</a></li>
+				<li class="col span_1_of_6"><a href="rsvp.html">RSVP</a></li>
+			</ul> <!--Main menu bar-->
+		</nav>
+
+        <!--Dropdown menu for mobile site-->
+        <div class="mobileMenu">
+            <button onclick="showMenu()" class="dropbtn">Menu</button>	<!--Button to click on for menu-->
+            <div id="dropdown" class="dropdown-content"> <!--Container for dropdown links-->
+                <a href="index.html">Home</a>
+				<a href="weddingdetails.html">Wedding Details</a>
+				<a href="accommodation.html">Accommodation</a>
+				<a href="travel.html">Travel</a>
+				<a href="contactus.html">Contact us</a>
+				<a href="rsvp.html">RSVP</a>
+            </div>	<!--Container for dropdown links-->
+        </div>
+
+        <div id="pageheader">  <!--Webpage header-->
+            <h2>Wedding Details</h2>
+        </div>
+
+		<div id="maincontent" class="section group"> <!--Main content div-->
+
+			<nav id="sidebar" class= "col span_2_of_12"> <!--Sidebar linking to conent within page-->
+                <h4>Go to Section</h4>
+                <table id="sidemenu">
+                    <tr>
+                        <td><a href="#ceremony">Ceremony</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#reception">Reception</a></td>
+                    </tr>
+				    <tr>
+                        <td><a href="#afters">After-party</a></td>
+                    </tr>
+                </table>
+            </nav> <!--Sidebar linking to conent within page-->
+
+            <div id="maintext" class="col span_9_of_12"> <!--Main text spans only 9 columns to leave clear space on left-->
+                <div class="content section group"> <!--Ceremony details container-->
+                    <a id="ceremony"></a><h3>Ceremony Details</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for ceremony-->
+                         <ul>
+                            <li><b>Location:</b> Kilnaspic Church, Mooncoin</li>
+                            <li><b>Time:</b> 13:30</li>
+                            <li><b>Date:</b> 27th May 2016</li>
+                        </ul>
+                        <br>
+                        <p>The wedding ceremony will take place in Kilnaspic Church, a picturesque location located in
+                            the parish of Mooncoin. This is Kate's local church and she served Mass there as a child.
+                            Ceremony music will be provided by <a href="http://www.somethingblueweddings.net/">Something
+                                Blue Acoustics</a>. Please see
+                            <a href="travel.html">map</a> for directions.</p>
+                    </div> <!--Text descriptor for ceremony-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Photo of church-->
+                        <img class="pic" id="churchpic" src="images/KilnaspicChurch.jpg" alt="Kilnaspic church">
+                    </div> <!--Photo of church-->
+                </div> <!--Ceremony details container-->
+
+                <div class="content section group"> <!--Reception details container-->
+                    <a id="reception"></a><h3>Reception Details</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for reception-->
+                         <ul>
+                            <li><b>Location:</b> Brandon House Hotel, New Ross</li>
+                            <li><b>Time:</b> 15:30 (approx)</li>
+                            <li><b>Date:</b> 27th May 2016</li>
+                        </ul>
+                        <br>
+                        <p>
+                            The wedding ceremony will be followed by a reception at Brandon House Hotel, New Ross. There
+                            will be a drinks reception on arrival, followed by a four course meal. Later in the evening,
+                            we have organised a band and DJ so we can dance and be merry until late into the night!
+                            Please see <a href="travel.html">map</a> for directions from Kilnaspic Church to
+                            Brandon House Hotel.
+                        </p>
+                    </div> <!--Text descriptor for reception-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Photo of Brandon House Hotel-->
+                        <img class="pic" id="hotelpic" src="images/brandon.jpg" alt="Brandon House Hotel">
+                    </div> <!--Photo of Brandon House Hotel-->
+                </div> <!--Reception details container-->
+
+                <div class="content section group" > <!--After-party details container-->
+                    <a id="afters"></a><h3>After-party</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for afters-->
+                         <ul>
+                            <li><b>Location:</b> Godinho family home, Ardera, Mooncoin</li>
+                            <li><b>Time:</b> 15:00</li>
+                            <li><b>Date:</b> 28th May 2016</li>
+                        </ul>
+                        <br>
+                        <p>
+                            Celebrations will continue on 28th May with a party at Kate's family home. We have organised
+                            a marquee in the back garden and there will be a barbecue followed by a hog roast later in
+                            the evening. We have also organised a local band to come and play. Please see
+                            <a href="travel.html">map</a> for directions to the house.
+                        </p>
+                    </div> <!--Text descriptor for reception-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Photo of barbecue-->
+                        <img class="pic" id="partypic" src="images/party.gif" alt="party">
+                    </div> <!--Photo of barbecue-->
+                </div> <!--Afters details container-->
+            </div> <!--Main text-->
+		</div> <!--Main content div-->
+
+        <footer>
+			<img id="FooterScroll" src="images/footer-scroll.png" alt="scroll footer">
+		</footer>
+
+	</div> <!--Wrapper for entire page-->
+
+    <!--Script for dropdown menu for mobile site-->
+    <script src="scripts/dropdown.js"></script>
+
+</body>
+
+</html>

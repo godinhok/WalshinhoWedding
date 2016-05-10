@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Walshinho Wedding Travel</title>
+    <link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/12cols.css" media="all">
+	<link href="css/mystyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper"> <!--Wrapper for entire page-->
+
+		<header class="section group">
+			<div class="HeaderPic col span_1_of_5">
+                <a href="index.html"><img id="leftHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+            <div id="titleText" class= "col span_3_of_5">
+                <a href="index.html"><h1>Walshinho Wedding</h1></a>
+            </div>
+            <div class="HeaderPic col span_1_of_5">
+               <a href="index.html"><img id="rightHeader" src="images/heart-header.png" alt="heart picture"></a>
+            </div>
+		</header>
+
+
+		<nav id="mainmenu" class="section group"> <!--Main menu bar-->
+			<ul id="menubar">
+				<li class="col span_1_of_6"><a href="index.html">Home</a></li>
+				<li class="col span_1_of_6"><a href="weddingdetails.html">Wedding Details</a></li>
+				<li class="col span_1_of_6"><a href="accommodation.html">Accommodation</a></li>
+				<li class="col span_1_of_6"><a href="travel.html">Travel</a></li>
+				<li class="col span_1_of_6"><a href="contactus.html">Contact us</a></li>
+				<li class="col span_1_of_6"><a href="rsvp.html">RSVP</a></li>
+			</ul> <!--Main menu bar-->
+		</nav>
+
+        <!--Dropdown menu for mobile site-->
+        <div class="mobileMenu">
+            <button onclick="showMenu()" class="dropbtn">Menu</button>	<!--Button to click on for menu-->
+            <div id="dropdown" class="dropdown-content"> <!--Container for dropdown links-->
+                <a href="index.html">Home</a>
+				<a href="weddingdetails.html">Wedding Details</a>
+				<a href="accommodation.html">Accommodation</a>
+				<a href="travel.html">Travel</a>
+				<a href="contactus.html">Contact us</a>
+				<a href="rsvp.html">RSVP</a>
+            </div>	<!--Container for dropdown links-->
+        </div>
+
+
+        <div id="pageheader"> <!--Webpage header-->
+            <h2>Travel</h2>
+        </div>
+
+		<div id="maincontent" class="section group"> <!--Main content div-->
+			<nav id="sidebar" class= "col span_2_of_12"> <!--Sidebar linking to content within page-->
+                <h4>Go to Section</h4>
+                <table id="sidemenu">
+                    <tr>
+                        <td><a href="#Venuemap">Venue map</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Kilnaspic">Kilnaspic Church</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Brandon">Brandon House Hotel</a></td>
+                    </tr>
+				    <tr>
+                        <td><a href="#Ardera">Kate's Family Home</a></td>
+                    </tr>
+                </table>
+            </nav> <!--Sidebar linking to conent within page-->
+
+            <div id="maintext" class="col span_9_of_12"> <!--Main text-->
+                <div class="content section group"> <!--Container for main venue map-->
+                    <a id="Venuemap"></a><h3>Venue map</h3>
+
+                    <p>The map shows an overview of the wedding venues, including Kilnaspic Church, Brandon House Hotel,
+                    Kate's family home, and other accommodation options in New Ross and Mooncoin.<br></p>
+
+                    <iframe id="largeMap" src="https://www.google.com/maps/d/u/0/embed?mid=zPJz5JyafKRE.kTwXg61c37Qo"></iframe>
+
+                </div> <!--Container for main venue map-->
+
+                <div class="content section group"> <!--Kilnaspic church travel information container-->
+
+                    <a id="Kilnaspic"></a><h3>Kilnaspic Church</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for Kilnaspic church travel information-->
+                        <h4>Location</h4>
+                        <p>
+                            The church is located about 6 km from the village of Mooncoin, approximately two hours drive
+                            from Dublin and about half an hour's drive from Brandon House Hotel.
+                        </p>
+                        <h4>Driving Directions from M9</h4>
+                        <p>
+                            From roundabout at the end of M9, take the N24 (Limerick road) as far as Mooncoin. In the
+                            village, turn right beside Comerford's pub. Turn left at the crossroads at the bottom.
+                            Continue on this road for about 3.4 km until you reach a crossroads. Turn left and continue
+                            to next right turn with signpost for church. Go up the road and turn right at the top. The
+                            car park is on the left and the church is straight ahead. There is more parking along the
+                            road beyond the church. It's about 6 km from Mooncoin and should take about 10 minutes from
+                            there.
+                        </p>
+                    </div> <!--Text descriptor for Kilnaspic church travel information-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Map to Kilnaspic Church-->
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55174.29124685664!2d-7.2504346519503695!3d52.327211812541975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842d028844d8f31%3A0x89569eea3d6b4cf!2sKillinaspick+Church%2C+Mooncoin%2C+Co.+Kilkenny%2C+Ireland!5e0!3m2!1sen!2suk!4v1460105981472"  allowfullscreen></iframe>
+                    </div> <!--Map to Kilnaspic Church-->
+
+                </div> <!--Kilnaspic church travel information container-->
+
+
+                <div class="content section group"> <!--Brandon House Hotel travel information container-->
+
+                    <a id="Brandon"></a><h3>Brandon House Hotel</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for Brandon House Hotel travel information-->
+                        <h4>Location</h4>
+                        <p>Brandon House Hotel is located in New Ross, Co. Wexford, about 2 hours drive from Dublin,
+                        and half an hour from Kilnaspic Church.</p>
+                        <h4>Driving Directions</h4>
+                        <p>
+                            From, Dublin, New Ross can be reached via the M9. Please use the Google map on the right to
+                            get exact directions to the hotel from your starting point.
+                        </p>
+                        <h4>Public Transport</h4>
+                        <p>
+                            New Ross is reachable by bus from Dublin - please see
+                            <a href="http://www.buseireann.ie/timetables/1425310182-004.pdf">here</a> for timetables.
+                            Lifts may be available from the hotel to the church on the morning of the wedding - please
+                            get in touch with us if you need a lift.
+                        </p>
+                    </div> <!--Text descriptor for Brandon House Hotel travel information-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Map to Brandon House Hotel-->
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13775.047562818763!2d-6.942152635493232!3d52.38660359411001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842b6c5e2a19eef%3A0xed654af4a961c05b!2sBrandon+House+Hotel!5e0!3m2!1sen!2suk!4v1460106599257" allowfullscreen></iframe>
+                    </div> <!--Map to Brandon House Hotel-->
+
+                </div> <!--Brandon House Hotel information container-->
+
+                <div class="content section group"> <!--Kate's family home travel information container-->
+
+                    <a id="Ardera"></a><h3>Kate's Family Home</h3>
+
+                    <div class="descriptiontext col span_7_of_12"> <!--Text descriptor for Kate's family home travel information-->
+                        <h4>Location</h4>
+                        <p>
+                            Kate's family home is located in Ardera, Mooncoin, approximately 3 miles from the village
+                            of Mooncoin.
+                        </p>
+                        <h4>Driving Directions from Mooncoin</h4>
+                        <p>
+                            Take the N24 (Limerick road) as far as Mooncoin. In the village, turn right beside
+                            Comerford's pub. Drive straight through the next crossroads. Continue on this road until
+                            you reach a T junction. Take a right and an immediate left. At the end of the road take a
+                            left. Continue straight on until you see a stone wall ahead of you. Take a right down the
+                            hill and continue up the road until you reach the first house on the left.
+                        </p>
+                    </div> <!--Text descriptor for Kate's family home travel information-->
+
+                    <div class="contentpic col span_4_of_12"> <!--Map to Kate's family home-->
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d19518.23645280567!2d-7.257003465488629!3d52.30185545548928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d52.2952381!2d-7.2584757!4m5!1s0x485d3cd7f6f4afc9%3A0xf6a68e5868ecc83f!2sArderra%2C+Co.+Kilkenny%2C+Ireland!3m2!1d52.3130436!2d-7.234227799999999!5e0!3m2!1sen!2suk!4v1460365681721" allowfullscreen></iframe>
+                    </div> <!--Map to Kate's family home-->
+
+                </div> <!--Kate's family home information container-->
+
+            </div> <!--Main text-->
+		</div> <!--Main content div-->
+
+        <footer>
+			<img id="FooterScroll" src="images/footer-scroll.png" alt="scroll footer">
+		</footer>
+
+	</div> <!--Wrapper for entire page-->
+
+    <!--Script for dropdown menu for mobile site-->
+    <script src="scripts/dropdown.js"></script>
+
+</body>
+
+</html>
